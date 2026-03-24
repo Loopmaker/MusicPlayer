@@ -1,5 +1,6 @@
 import mongoose from 'mongoose';
-const songSchema = new mongoose.Schema({
+
+const albumSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -12,19 +13,17 @@ const songSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    audioUrl:{
-        type: String,
-        required: true
-    },
-    duration: {
+    releaseYear: {
         type: Number,
         required: true
     },
-    albumId: {
+    songs:[
+      {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Album',
-        required: false
-    }
+        ref: 'Song'
+      }
+    ]
+
 }, { timestamps: true });
 
-export const Song = mongoose.model('Song', songSchema);
+export const Album = mongoose.model('Album', albumSchema);
