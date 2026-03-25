@@ -3,7 +3,7 @@
 This project is currently in development.
 
 ## About
-A full-stack music player application that allows users to play and manage music.
+A music player application.
 
 ## Tech Stack
 - Frontend: React, TypeScript, Tailwind CSS
