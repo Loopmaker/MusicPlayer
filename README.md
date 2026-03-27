@@ -10,4 +10,4 @@ A music player application.
 - Backend: Node.js, Express, MongoDB
 
 ## Status
-Actively being developed.
+Paused
